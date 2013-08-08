@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------------------
+
+Some tweaks to the title prompt.
+
+------------------------------------------------------------------------*/
+
+#post-title {}
+	#post-title #title-prompt {
+		position: absolute;
+			top: 0;
+			right: 0;
+		padding: 12px 0;
+		text-indent: 9px;
+		font-weight: 200;
+		font-size: 1.7em;
+		width: 100%;
+		color: #ccc;
+		color: rgba(0,0,0,0.5);
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	#post-title #title-prompt.active {
+		width: 160px;
+		color: #efefef;
+		color: rgba(0,0,0,0.2);
+	}
+	#post-title #title {
+		font-weight: 200;
+	}
+
+/* MP6 has some slightly different padding for the input */
+.mp6 #post-title {}
+	.mp6 #post-title #title-prompt {
+		padding: 10px 0;
+	}
+	.mp6 #post-title #title-prompt.active {
+		width: 170px;
+	}
